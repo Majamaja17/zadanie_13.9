@@ -1,8 +1,4 @@
-exports.upload = function(request, response) {
-    console.log("Rozpoczynam obsługę żądania upload.");
-    response.write("Rozpoczynam upload!");
-    response.end();
-}
+var fs = require('fs');
 
 exports.welcome = function(request, response) {
     console.log("Rozpoczynam obsługę żądania welcome.");
@@ -15,8 +11,6 @@ exports.error = function(request, response) {
     response.write("404 :(");
     response.end();
 }
-
-var fs = require('fs');
 
 exports.welcome = function(request, response) {
     console.log("Rozpoczynam obsługę żądania welcome.");
